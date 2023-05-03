@@ -38,7 +38,7 @@
               <div class="item-option-select">
                   <h6>Выберите цвет</h6>
                   <select name="color" class="form-control" required>
-                    <option value="" disabled selected>Выберите цвет</option>
+                    <option value="" disabled selected>Цвет</option>
                     {% for i in single_product.variation_set.colors %}
                     <option value="{{i.variation_value | lower}}">{{i.variation_value | capfirst}}</option>
                     {% endfor %}
@@ -49,7 +49,7 @@
               <div class="item-option-select">
                   <h6>Выберите размер</h6>
                   <select name="size" class="form-control">
-                    <option value="" disabled selected>Select</option>
+                    <option value="" disabled selected>Размер</option>
                     {% for i in single_product.variation_set.sizes %}
                     <option value="{{i.variation_value | lower}}">{{i.variation_value | capfirst }}</option>
                     {% endfor %}
@@ -76,7 +76,7 @@
                 <div class="col-md-9">
     
         <header class="section-heading">
-            <h3>Customer Reviews </h3>  
+            <h3>Отзывы клиентов </h3>  
             
         </header>
     
@@ -84,16 +84,18 @@
             <div class="icontext w-100">
                 <img src="{% static './images/avatars/avatar1.jpg'%}" class="img-xs icon rounded-circle">
                 <div class="text">
-                    <span class="date text-muted float-md-right">24.04.2020 </span>  
-                    <h6 class="mb-1">Mike John </h6>
+                    <span class="date text-muted float-md-right">24.01.2023 </span>  
+                    <h6 class="mb-1">Michael Korsel </h6>
                     
                 </div>
             </div> <!-- icontext.// -->
             <div class="mt-3">
                 <p>
-                    Dummy comment Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    Я купил джинсы от известного бренда на сайте интернет-магазина и был приятно удивлен качеством товара. Материал очень приятный на ощупь, и джинсы были хорошо сшиты. Они сели на мне идеально, точно соответствуя моему размеру.
+
+Кроме того, я оценил удобство покупки на сайте магазина, так как мне было легко выбрать нужный размер и модель, а доставка была быстрой и бесплатной. Я также оставил свой отзыв на сайте магазина, чтобы помочь другим покупателям с выбором джинсов.
+
+В целом, я очень доволен своей покупкой и рекомендую этот бренд и интернет-магазин всем, кто ищет качественные джинсы по приемлемой цене.
                 </p>	
             </div>
         </article>
